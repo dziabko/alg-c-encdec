@@ -1,5 +1,4 @@
 #![allow(unused)]
-mod test;
 use std::str;
 use std::fs;
 fn main() {
@@ -54,7 +53,7 @@ pub fn compBuff(string: &str) -> Vec<(i32,usize, char)> {
                     // Length & offset of prev match
                     let len1 = cur_str.len() - 1;
                     let offset = i as i32 - prev_match_index - len1 as i32;
-                    
+
                     // Encoding (o, l, c)
                     let tuple = (offset, len1, c);
                     result.push(tuple);
